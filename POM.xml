@@ -1,0 +1,13 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>microservices-docker</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>api-gateway</module>
+        <module>user-service</module>
+        <module>product-service</module>
+        <module>order-service</module>
+    </modules>
+</project>
