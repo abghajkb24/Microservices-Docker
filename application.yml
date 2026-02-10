@@ -1,0 +1,14 @@
+server:
+  port: 8081 # Altera o porto para cada serviço (8081, 8082, 8083)
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
