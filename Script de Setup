@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod +x mvnw
+docker-compose down -v
+docker-compose build
+echo "Pronto! Use 'make up' para ligar tudo."
