@@ -1,0 +1,16 @@
+# Arquitetura do Sistema
+
+## 🏗️ Visão Geral
+O projeto utiliza uma arquitetura de microserviços baseada em Spring Boot e Docker.
+
+### Componentes:
+- **API Gateway**: Porta de entrada única (Spring Cloud Gateway).
+- **User Service**: Gestão de utilizadores e autenticação.
+- **Product Service**: Catálogo de produtos.
+- **Order Service**: Processamento de pedidos (comunicação via Feign Client).
+- **Base de Dados**: PostgreSQL centralizado (ou instâncias separadas por schema).
+
+## 🚀 Fluxo de Comunicação
+1. O cliente faz um pedido ao Porto 8080 (Gateway).
+2. O Gateway redireciona para o serviço específico.
+3. Os serviços comunicam entre si via REST/Feign.
